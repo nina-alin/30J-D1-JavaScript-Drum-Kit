@@ -1,0 +1,57 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sounds {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    padding: 50vh 0;
+}
+
+.sound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    text-align: center;
+    width: 100px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sound:hover {
+    cursor: pointer;
+}
+
+.sound > kbd {
+    color: white;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.sound > p {
+    margin: 0;
+    color: orange;
+    font-size: 0.8rem;
+}
+
+.playing {
+    box-shadow: orange 0 0 5px 2px;
+    border: 2px solid orange;
+    transition: all 0.2s ease-out;
+}
+
+.playing > kbd {
+    transform: scale(1.2);
+    transition: all 0.2s ease-out;
+}
